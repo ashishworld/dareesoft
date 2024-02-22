@@ -1,8 +1,4 @@
-on: 
-  push:
-    branches:
-      - main
-  
+on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -15,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.carestaffservices.uk
-        username: carestaffservices.uk
-        password: 849a822dc7b0
-        server-dir: /public_html/dev/
+        server: 139.59.84.113
+        username: kwebmakerinftp
+        password: 5q^Ds401t
+        server-dir: /dareesoftdemo.kwebmaker.in/
